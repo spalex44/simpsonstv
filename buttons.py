@@ -10,12 +10,12 @@ GPIO.setup(18, GPIO.OUT)
 
 def turnOnScreen():
     os.system('raspi-gpio set 19 op a5')
-    GPIO.output(18, GPIO.HIGH)
+    GPIO.output(18, GPIO.LOW)
 
 
 def turnOffScreen():
     os.system('raspi-gpio set 19 ip')
-    GPIO.output(18, GPIO.LOW)
+    GPIO.output(18, GPIO.HIGH)
 
 
 turnOffScreen()
